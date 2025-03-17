@@ -251,6 +251,10 @@ export function MediaPicker({
   )
     ? cms.api.tina.schema.schema?.config?.media?.accept.join(',')
     : cms.api.tina.schema.schema?.config?.media?.accept;
+  console.log(accept);
+  console.log(cms.media.accept);
+  console.log(DEFAULT_MEDIA_UPLOAD_TYPES);
+  console.log(accept || cms.media.accept || DEFAULT_MEDIA_UPLOAD_TYPES);
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     accept: dropzoneAcceptFromString(
       accept || cms.media.accept || DEFAULT_MEDIA_UPLOAD_TYPES

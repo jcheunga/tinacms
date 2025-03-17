@@ -20,6 +20,7 @@ const supportedFileTypes = [
   'application/mxf',
   'image/*',
   'video/*',
+  'font/*'
 ];
 export const DEFAULT_MEDIA_UPLOAD_TYPES = supportedFileTypes.join(',');
 
